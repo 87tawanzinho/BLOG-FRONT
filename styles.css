@@ -14,8 +14,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 48px;
   padding: 20px;
+  flex-direction: row-reverse;
 }
 
 input {
@@ -23,4 +23,18 @@ input {
   padding: 8px;
   border-radius: 100px;
   border: none;
+  width: 140px;
+}
+
+.isMobile {
+  display: none;
+}
+
+.imgMenu {
+  filter: invert(70%);
+}
+@media (max-width: 1200px) {
+  .isMobile {
+    display: block;
+  }
 }
