@@ -23,4 +23,20 @@ const theArray = (data) => {
   });
 };
 
+const aboutMe = document.querySelector("#aboutMe");
+let clicked = false;
+
+function clickedAbout() {
+  const divAboutMe = document.querySelector("#div-aboutMe");
+  if (clicked) {
+    divAboutMe.classList.remove("mobile");
+  } else {
+    divAboutMe.classList.add("mobile");
+  }
+  console.log(clicked);
+
+  clicked = !clicked;
+}
+
+aboutMe.addEventListener("click", clickedAbout);
 request();
