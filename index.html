@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Pessoal</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <script src="./script.js" defer type="module"></script>
   </head>
   <body>
+    <div class="AboutMe mobile">
+      <div style="margin-top: 50px">
+        <img
+          src="https://media.licdn.com/dms/image/D4D03AQFRxVKNCrSsYQ/profile-displayphoto-shrink_200_200/0/1685463037759?e=1708560000&v=beta&t=F548_sBM1mOMs1aVIqec0_e8xMWNyHmOdvcZ26KA3jU"
+          style="border-radius: 100%"
+          width="150px"
+        />
+      </div>
+    </div>
     <div class="header">
       <p style="font-size: 24px">Meu Blog</p>
-      <input type="text" placeholder="Buscar" name="search" />
 
       <img
         class="isMobile imgMenu"
@@ -19,8 +27,16 @@
       />
     </div>
 
-    <main>
-      <div></div>
+    <main
+      style="
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      "
+    >
+      <div class="list"></div>
     </main>
   </body>
 </html>
